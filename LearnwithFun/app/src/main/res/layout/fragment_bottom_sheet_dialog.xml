@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/fragment_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/rounded_corner"
+
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/lbl_character"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="TEST"
+                    android:textColor="#000"
+                    android:visibility="gone"
+                    android:textSize="60dp" />
+
+                <ImageView
+                    android:id="@+id/img_clip_art"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                     />
+
+                <TextView
+                    android:id="@+id/lbl_word"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="60dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/textview_word_background"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lbl_previous"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="230dp"
+                android:background="@drawable/previous"
+                android:visibility="gone"
+                android:textColor="#000"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/lbl_next"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="230dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/next"
+                android:textColor="#000"
+                android:textSize="40dp"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_clip_art_close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/close" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view_swipe_left"
+        android:layout_marginTop="230dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="swipe_left.json"
+        app:lottie_autoPlay="true"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view_swipe_right"
+        android:layout_marginTop="230dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="swipe_right.json"
+        app:lottie_autoPlay="true"/>
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/pageIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="417dp"
+        app:piv_animationType="drop"
+        app:piv_dynamicCount="true"
+        app:piv_interactiveAnimation="true"
+        app:piv_selectedColor="@color/colorAccent"
+        app:piv_unselectedColor="@color/colorPrimaryDark"/>
+
+</RelativeLayout>

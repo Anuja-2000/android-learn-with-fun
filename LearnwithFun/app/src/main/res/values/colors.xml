@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorSkyBlue">#00BFFF</color>
+    <color name="colorLanguageSinhala">#65D0FF</color>
+    <color name="colorLanguageTamil">#FFBB56</color>
+    <color name="colorLanguageEnglish">#1EFFC9</color>
+    <color name="colorLanguageNumbers">#FF9292</color>
+    <color name="colorStatusBar">#7400FF</color>
+    <color name="colorSelectLanguageActivityBackground">#99FF00</color>
+    <color name="White">#FFFFFF</color>
+    <color name="colorSinhalaBackground">#046B8B</color>
+    <color name="colorEnglishBackground">#01B190</color>
+    <color name="colorTamilBackground">#F5A735</color>
+    <color name="colorNumbersBackground">#FF5151</color>
+    <color name="colorselectLangugeActivityBarColours">#00805C</color>
+</resources>
